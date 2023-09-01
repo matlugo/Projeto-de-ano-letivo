@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using sistema_gestao_Adotante;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,7 @@ namespace sistema_gestao_estudantes
         }
 
 
-        Estudante estudante = new Estudante();
+        Adotante adotante = new Adotante();
 
         public object ColunaDeFotos { get; private set; }
 

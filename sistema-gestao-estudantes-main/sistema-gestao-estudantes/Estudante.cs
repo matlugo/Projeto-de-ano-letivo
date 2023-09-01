@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using sistema_gestao_estudantes;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,12 +13,12 @@ using System.Windows.Forms;
 namespace sistema_gestao_Adotante
 
 {
-    internal class Estudante
+    internal class Adotante
     {
         MEU_BD bancoDeDados = new MEU_BD();
 
         // Função que inclui o estudante no banco de dados.
-        public bool inserirEstudante(string nome, string sobrenome,
+        public bool inseriradotante(string nome, string sobrenome,
             DateTime nascimento, string telefone, string genero,
             string endereco, MemoryStream foto) 
         {
@@ -44,7 +45,7 @@ namespace sistema_gestao_Adotante
                 return false;
             }
         }
-        public bool atualizarEstudante(int id, string nome, string sobrenome,
+        public bool atualizar(int id, string nome, string sobrenome,
            DateTime nascimento, string telefone, string genero,
            string endereco, MemoryStream foto)
         {
@@ -74,7 +75,7 @@ namespace sistema_gestao_Adotante
         }
         //Deletar estudante
 
-        public bool deletarestudante(int id)
+        public bool deletarAdotante(int id)
         {
             MySqlCommand comando =
                 new MySqlCommand("DELETE FROM `Adotante` WHERE `id` = @studentid");

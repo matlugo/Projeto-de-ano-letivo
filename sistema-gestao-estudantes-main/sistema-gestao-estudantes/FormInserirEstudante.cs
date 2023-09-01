@@ -38,7 +38,7 @@ namespace sistema_gestao_estudantes
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             // Insere um estudante.
-            Estudante estudante = new Estudante();
+            adotante adotante = new adotante();
             string nome = textBoxNome.Text;
             string sobrenome = textBoxSobrenome.Text;
             DateTime nascimento = dateTimePickerNascimento.Value;
