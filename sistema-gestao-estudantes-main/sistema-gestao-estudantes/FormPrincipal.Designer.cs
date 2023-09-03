@@ -38,6 +38,7 @@
             this.imprimirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cURSOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nOTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inserirAnimalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +62,7 @@
             this.estatísticasToolStripMenuItem,
             this.editarRemoverToolStripMenuItem,
             this.gerenciarEstudantesToolStripMenuItem,
+            this.inserirAnimalToolStripMenuItem,
             this.imprimirToolStripMenuItem});
             this.eSTUDANTEToolStripMenuItem.Name = "eSTUDANTEToolStripMenuItem";
             this.eSTUDANTEToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
@@ -116,6 +118,12 @@
             this.nOTASToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.nOTASToolStripMenuItem.Text = "NOTAS";
             // 
+            // inserirAnimalToolStripMenuItem
+            // 
+            this.inserirAnimalToolStripMenuItem.Name = "inserirAnimalToolStripMenuItem";
+            this.inserirAnimalToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.inserirAnimalToolStripMenuItem.Text = "Inserir Animal";
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,5 +154,6 @@
         private System.Windows.Forms.ToolStripMenuItem cURSOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nOTASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gerenciarEstudantesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inserirAnimalToolStripMenuItem;
     }
 }

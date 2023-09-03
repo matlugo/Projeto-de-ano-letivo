@@ -38,7 +38,7 @@ namespace sistema_gestao_estudantes
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             // Insere um estudante.
-            adotante adotante = new adotante();
+            Adotante Adotante = new Adotante();
             string nome = textBoxNome.Text;
             string sobrenome = textBoxSobrenome.Text;
             DateTime nascimento = dateTimePickerNascimento.Value;
@@ -70,7 +70,7 @@ namespace sistema_gestao_estudantes
             else if (Verificar())
             {
                 pictureBoxFoto.Image.Save(foto, pictureBoxFoto.Image.RawFormat);
-                if (estudante.inserirEstudante(nome, sobrenome, nascimento, 
+                if (sistema_gestao_estudantes.Adotante.inserirAdotante(nome, sobrenome, nascimento,
                     telefone, genero, endereco, foto))
                 {
                     MessageBox.Show("Novo Estudante Cadastrado", "Sucesso!",
@@ -78,7 +78,7 @@ namespace sistema_gestao_estudantes
                 }
                 else
                 {
-                    MessageBox.Show("Erro", "Inserir Estudante", 
+                    MessageBox.Show("Erro", "Inserir Estudante",
                         MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }

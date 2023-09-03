@@ -32,7 +32,7 @@ namespace sistema_gestao_estudantes
             dataGridView1.ReadOnly = true;
             DataGridViewImageColumn colunaDeFotos = new DataGridViewImageColumn();
             dataGridView1.RowTemplate.Height = 80;
-            dataGridView1.DataSource = estudante.pegarEstudantes(comando);
+            dataGridView1.DataSource = adotante.pegarAdotante(comando);
             colunaDeFotos = (DataGridViewImageColumn)dataGridView1.Columns[7];
            // colunaDeFotos.ImageLayout = DataGridViewImageCell. = true ;
             dataGridView1.AllowUserToAddRows= false;

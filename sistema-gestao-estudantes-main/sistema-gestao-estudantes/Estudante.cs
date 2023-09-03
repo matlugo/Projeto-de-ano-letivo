@@ -104,5 +104,10 @@ namespace sistema_gestao_Adotante
 
             return tabela;
         }
+
+        internal object pegaradotante(MySqlCommand comando)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
